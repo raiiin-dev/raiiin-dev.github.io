@@ -4,9 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Rina Turns 25</title>
-<meta name="description" content="A quarter-life celebration. Sunday 22 November, Dean &amp; Nancy on 22, Sydney. Please RSVP.">
+<meta name="description" content="A quarter-life celebration. Saturday 21 November, Dean &amp; Nancy on 22, Sydney. Please RSVP.">
 <meta property="og:title" content="Rina Turns 25">
-<meta property="og:description" content="Sunday 22 November · Dean &amp; Nancy on 22 · 3:30pm till sober. Please RSVP.">
+<meta property="og:description" content="Saturday 21 November · Dean &amp; Nancy on 22 · 3:30pm till sober. Please RSVP.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400&family=Pinyon+Script&family=Archivo:ital,wght@0,300;0,400;0,500;0,700;1,800&display=swap">
@@ -192,8 +192,8 @@ footer .script{display:block;font:400 40px/1 var(--f-script);letter-spacing:0;te
       <span class="turns"><span>TURNS</span><i>25</i></span>
     </h1>
     <div class="facts rise">
-      <span>Sunday</span><span class="dot"></span>
-      <span>22nd of <strong>November</strong></span><span class="dot"></span>
+      <span>Saturday</span><span class="dot"></span>
+      <span>21st of <strong>November</strong></span><span class="dot"></span>
       <span>3:30pm till sober</span>
     </div>
     <div class="countdown rise" id="countdown" aria-label="Time until the party">
@@ -274,7 +274,7 @@ footer .script{display:block;font:400 40px/1 var(--f-script);letter-spacing:0;te
       <p>Prices in AUD. Everyone pays for their own meal.</p>
     </div>
     <div class="menu-cols" id="menuCols"></div>
-    <p class="fineprint menu-note">10% surcharge on Sundays · 5% discretionary service charge · 1.2% on card payments · Bills split a maximum of 2 ways per table · All burgers are cooked well-done · AUS = Australian</p>
+    <p class="fineprint menu-note">5% discretionary service charge · 1.2% on card payments · Bills split a maximum of 2 ways per table · All burgers are cooked well-done · AUS = Australian</p>
   </div>
 </section>
 
@@ -299,7 +299,7 @@ footer .script{display:block;font:400 40px/1 var(--f-script);letter-spacing:0;te
         <fieldset>
           <span class="legend" id="att-l">Are you coming?</span>
           <div class="choice" role="radiogroup" aria-labelledby="att-l">
-            <label><input type="radio" name="attending" value="Yes" id="f-yes"><span class="opt"><b>Wouldn't miss it</b><small>See you on the 22nd</small></span></label>
+            <label><input type="radio" name="attending" value="Yes" id="f-yes"><span class="opt"><b>Wouldn't miss it</b><small>See you on the 21st</small></span></label>
             <label><input type="radio" name="attending" value="No" id="f-no"><span class="opt"><b>Sadly, can't</b><small>Celebrating from afar</small></span></label>
           </div>
         </fieldset>
@@ -347,21 +347,21 @@ footer .script{display:block;font:400 40px/1 var(--f-script);letter-spacing:0;te
 
 <footer>
   <span class="script">See you there</span>
-  Sunday 22 November · Dean &amp; Nancy on 22 · Sydney
+  Saturday 21 November · Dean &amp; Nancy on 22 · Sydney
 </footer>
 
 <script>
 /* ===== CONFIG ===== paste your Google Apps Script web-app URL here */
 const RSVP_ENDPOINT = "https://script.google.com/macros/s/AKfycbyqmuz3CrRlT4ujT7D9HvBVbLRa0deALtzb0nJo1wO_OY-IRQN7YjsauomZoRZXMFRI/exec";
 
-const PARTY_START = Date.parse("2026-11-22T15:30:00+11:00"); // Sydney (AEDT)
+const PARTY_START = Date.parse("2026-11-21T15:30:00+11:00"); // Sydney (AEDT)
 
 /* ---------- Calendar link ---------- */
 (function(){
   const p = new URLSearchParams({
     action:"TEMPLATE",
     text:"Rina turns 25 🥂",
-    dates:"20261122T043000Z/20261122T110000Z",
+    dates:"20261121T043000Z/20261121T110000Z",
     location:"Dean & Nancy on 22, Level 22, 2 Hunter St, Sydney NSW 2000",
     details:"A quarter-life celebration. 3:30pm till sober. Dress code: all black."
   });
@@ -490,7 +490,7 @@ const MENU = {
     const first = (name || "").trim().split(/\s+/)[0] || "friend";
     document.getElementById("doneTitle").textContent = attending === "Yes" ? "See you there" : "You'll be missed";
     document.getElementById("doneMsg").textContent = attending === "Yes"
-      ? `Thanks, ${first}! You're on the list for Sunday 22 November. Wear something black and bring your appetite.`
+      ? `Thanks, ${first}! You're on the list for Saturday 21 November. Wear something black and bring your appetite.`
       : `Thanks for letting Rina know, ${first}. She'll raise a glass to you.`;
     document.getElementById("previewFlag").hidden = configured;
   }
